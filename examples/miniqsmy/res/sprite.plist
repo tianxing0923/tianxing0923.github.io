@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>frames</key>
+		<dict>
+			<key>btn_again.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,372},{293,99}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{293,99}</string>
+			</dict>
+			<key>btn_attack.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,471},{167,166}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{167,166}</string>
+			</dict>
+			<key>btn_share.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{293,372},{293,99}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{293,99}</string>
+			</dict>
+			<key>hits.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{167,471},{118,93}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{118,93}</string>
+			</dict>
+			<key>hp_bg.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{167,564},{338,21}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{338,21}</string>
+			</dict>
+			<key>btn_start.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,0},{583,139}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{583,139}</string>
+			</dict>
+			<key>btn_attention.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,278},{587,94}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{587,94}</string>
+			</dict>
+			<key>btn_back.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,139},{583,139}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{583,139}</string>
+			</dict>
+		</dict>
+		<key>metadata</key>
+		<dict>
+			<key>format</key>
+			<integer>2</integer>
+			<key>textureFileName</key>
+			<string>sprite.png</string>
+			<key>realTextureFileName</key>
+			<string>sprite.png</string>
+			<key>size</key>
+			<string>{587,637}</string>
+		</dict>
+		<key>texture</key>
+		<dict>
+			<key>width</key>
+			<integer>587</integer>
+			<key>height</key>
+			<integer>637</integer>
+		</dict>
+	</dict>
+</plist>
