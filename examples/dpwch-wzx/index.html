@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="author" content="erictian">
+    <meta name="description" content="污妖王吴宗宪驾临YY直播">
+    <title>污妖王吴宗宪驾临YY直播</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="loading_mask" class="loading-mask animated">
+        <div class="load-wrap loader">
+            <div class="loading"></div>
+            <p id="load_text" class="load-text">Loading... 0%</p>
+        </div>
+    </div>
+    <div id="container" class="container">
+        <div class="logo bg-size-v"></div>
+        <div id="page_wrap" class="page-wrap"></div>
+    </div>
+    <script id="tpl" type="text/html">
+        <div class="fullpage">
+            <section class="page page-1 bg-size-h animated fadeIn" data-index="1">
+                <div class="person pos-abs bg-size-h animated bounceIn"></div>
+                <div class="mask pos-abs bg-size-h"></div>
+                <div class="content pos-abs">
+                    <div class="title bg-size-v animated fadeInDown"></div>
+                    <div class="gif-wrap animated bounceInRight">
+                        <div class="gif gif-1">
+                            <img src="http://cdn.ttthing.com/yy_wuzongxian/images/gif_1.jpg">
+                            <div class="load-wrap">
+                                <div class="loading"></div>
+                            </div>
+                        </div>
+                        <div class="gif gif-2">
+                            <img src="http://cdn.ttthing.com/yy_wuzongxian/images/gif_2.jpg">
+                            <div class="load-wrap">
+                                <div class="loading"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-change bg-size-v"></div>
+                    <div class="arrow bg-size-v"></div>
+                </div>
+            </section>
+            <section class="page page-2 bg-size-h animated hide" data-index="2">
+                <div class="person pos-abs bg-size-h animated bounceIn"></div>
+                <div class="mask pos-abs bg-size-h"></div>
+                <div class="content pos-abs">
+                    <div class="title bg-size-v animated fadeInDown"></div>
+                    <div class="gif-wrap animated bounceInRight">
+                        <div class="gif gif-3">
+                            <img src="http://cdn.ttthing.com/yy_wuzongxian/images/gif_3.jpg">
+                            <div class="load-wrap">
+                                <div class="loading"></div>
+                            </div>
+                        </div>
+                        <div class="gif gif-4">
+                            <img src="http://cdn.ttthing.com/yy_wuzongxian/images/gif_4.jpg">
+                            <div class="load-wrap">
+                                <div class="loading"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-change bg-size-v"></div>
+                    <div class="arrow bg-size-v"></div>
+                </div>
+            </section>
+            <section class="page page-3 bg-size-h animated hide" data-index="3">
+                <div class="person pos-abs bg-size-h animated bounceIn"></div>
+                <div class="mask pos-abs bg-size-h"></div>
+                <div class="content pos-abs">
+                    <div class="title bg-size-v animated fadeInDown"></div>
+                    <div class="gif-wrap animated bounceInRight">
+                        <div class="gif gif-5">
+                            <img src="http://cdn.ttthing.com/yy_wuzongxian/images/gif_5.jpg">
+                            <div class="load-wrap">
+                                <div class="loading"></div>
+                            </div>
+                        </div>
+                        <div class="gif gif-6">
+                            <img src="http://cdn.ttthing.com/yy_wuzongxian/images/gif_6.jpg">
+                            <div class="load-wrap">
+                                <div class="loading"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-change bg-size-v"></div>
+                    <div class="arrow bg-size-v"></div>
+                </div>
+            </section>
+        </div>
+        <div class="fullpage">
+            <section class="page page-4 bg-size-h">
+                <div class="person pos-abs bg-size-h animated bounceIn"></div>
+                <div class="content pos-abs">
+                    <div class="title bg-size-v animated fadeInDown"></div>
+                    <div id="video_wrap" class="video-wrap">
+                        <img class="cover" src="http://cdn.ttthing.com/yy_wuzongxian/images/cover.jpg">
+                    </div>
+                    <div class="arrow bg-size-v"></div>
+                </div>
+            </section>
+        </div>
+        <div class="fullpage">
+            <section class="page page-5 bg-size-h">
+                <div class="person pos-abs bg-size-h animated bounceIn"></div>
+                <div class="content pos-abs">
+                    <a class="btn-go bg-size-v" href="http://fun.yy.com/html/publish/1605/326457157588.html"></a>
+                </div>
+            </section>
+        </div>
+    </script>
+    <script src="js/zepto.js"></script>
+    <script src="js/index.js"></script>
+    <script src="http://cdn.ttthing.com/comm/js/require.js"></script>
+    <script>
+        require.config({
+            baseUrl: "http://www.ttthing.com/static/js",
+            paths: {
+                "wx": "http://res.wx.qq.com/open/js/jweixin-1.0.0",
+                "ticket": "http://www.ttthing.com/cgi/yy_game/ticket/?url=" + encodeURIComponent(location.href),
+            }
+        });
+
+        $(function () {
+
+            // 分享参数
+            var SHARE_OBJ = {
+                title: '讲真，我们都欠吴宗宪一次点赞',
+                desc: '污妖王只有一个！综艺一哥吴宗宪',
+                link: location.href,
+                imgUrl: 'http://www.ttthing.com/weixin/yy_wuzongxian/images/thumbnail.jpg'
+            };
+
+            require(["wx", "ticket"], function(wx) {
+                wx.config({
+                    debug: false,
+                    appId: wx_conf.appId,
+                    timestamp: wx_conf.timestamp,
+                    nonceStr: wx_conf.nonceStr,
+                    signature: wx_conf.signature,
+                    jsApiList: ['onMenuShareTimeline', 'onMenuShareAppMessage', 'onMenuShareQQ', 'onMenuShareWeibo', 'onMenuShareQZone']
+                });
+                wx.ready(function() {
+                    // 分享到朋友圈
+                    wx.onMenuShareTimeline(SHARE_OBJ);
+                    // 分享给朋友
+                    wx.onMenuShareAppMessage(SHARE_OBJ);
+                    // 分享到QQ
+                    wx.onMenuShareQQ(SHARE_OBJ);
+                    // 分享到腾讯微博
+                    wx.onMenuShareWeibo(SHARE_OBJ);
+                    // 分享到QQ空间
+                    wx.onMenuShareQZone(SHARE_OBJ);
+                });
+                wx.error(function(res) {
+                    alert(JSON.stringify(res));
+                });
+            });
+        });
+
+        function myGetJs(url, succ, err) {
+            var script = document.createElement('script');
+            script.type = "text/javascript";
+            script.src = url;
+
+            if (script.readyState) {
+                script.onreadystatechange = function() {
+                    if (script.readyState == "loaded" || script.readyState == "complete") {
+                        script.onreadystatechange = null;
+                        succ();
+                    }
+                };
+            } else {
+                script.onload = succ;
+            }
+            script.onerror = err;
+            var head = document.getElementsByTagName("head")[0];
+            head.appendChild(script);
+        }
+    </script>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement('script');
+            hm.src = '//hm.baidu.com/hm.js?ac3ba867f50ba5c913a3408d52522730';
+            var s = document.getElementsByTagName('script')[0]; 
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</body>
+</html>
